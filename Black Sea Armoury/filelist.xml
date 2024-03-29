@@ -29,6 +29,7 @@
   <Item file="%ModDir%/Items/Enemy/weapons.xml"/>
   <Item file="%ModDir%/Items/Enemy/suits.xml"/>
   <Item file="%ModDir%/Items/Enemy/mags.xml"/>
+  <Character file="%ModDir%/Enemy/Pirate/Piratecommando/Piratecommando.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piraterecruits/Piraterecruits.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piraterecruits_melee/Piraterecruits_melee.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateforerunner/Pirateforerunner.xml" />
@@ -79,6 +80,7 @@
   <Character file="%ModDir%/Enemy/Pirate/Pirateenforcerpod/Pirateenforcerpod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Pirateheavypod/Pirateheavypod.xml" />
   <Character file="%ModDir%/Enemy/Pirate/Piraterecruitspod/Piraterecruitspod.xml" />
+  <Character file="%ModDir%/Enemy/Pirate/Pirateriflemanpod/Pirateriflemanpod.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitiongunnerpod/Coalitiongunnerpod.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionheavypod/Coalitionheavypod.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionriflemanpod/Coalitionriflemanpod.xml" />

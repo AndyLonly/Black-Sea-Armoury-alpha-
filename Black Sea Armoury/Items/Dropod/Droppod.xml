@@ -39,6 +39,44 @@
       </StatusEffect>
     </Projectile>
   </Item>
+  <Item name="Piraterifleman_Pod" identifier="BW_P_rifleman" nameidentifier="BW_P_rifleman" translationidentifier="BW_P_rifleman" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
+    <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
+    <Body width="600" height="110" density="20" />
+    <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="false" sticktoitems="false" sticktostructures="false" friendlyfire="false" damagedoors="true">
+      <Attack structuredamage="200" itemdamage="50" severlimbsprobability="2.0" penetration="0.5">
+        <Affliction identifier="blunttrauma" strength="10" />
+        <Affliction identifier="bleeding" strength="1" />
+        <Affliction identifier="stun" strength="2" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" lifetime="0.5">
+        <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="0" anglemax="0" particleamount="10" velocitymin="-10" velocitymax="-100" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnNotContained" target="This" condition="-100" delay="8"/>
+      <StatusEffect type="OnBroken" target="This">
+        <SpawnCharacter speciesname="Pirateriflemanpod" count="1" spread="4" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" delay="5" Interval="6">
+        <SpawnCharacter speciesname="Piraterifleman" count="1" spread="4" />
+        <SpawnCharacter speciesname="Piratecommando" count="1" spread="4" />
+        <Remove/>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.1" scalemax="0.2" />
+        <!--Add some impact effect-->
+        <Explosion ignorecover="true" onlyinside="true" range="800" force="40" playtinnitus="false" showeffects="false" applyfireeffects="false">
+          <Affliction identifier="blunttrauma" strength="10" />
+          <Affliction identifier="stun" strength="2.5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+      </StatusEffect>
+    </Projectile>
+  </Item>
   <Item name="Piratedismantler_Pod" identifier="BW_P_dismantler" nameidentifier="BW_P_dismantler" translationidentifier="BW_P_dismantler" category="Misc" scale="0.4" sonarsize="6" hideinmenus="true">
     <Sprite texture="%ModDir%/items/Dropod/ES_RUSH.png" sourcerect="12,72,897,843" depth="0.55" />
     <Body width="600" height="110" density="20" />
