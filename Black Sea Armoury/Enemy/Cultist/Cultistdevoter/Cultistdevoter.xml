@@ -51,7 +51,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="cultistrobes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
     <Item Identifier="rituallantern" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="1">
@@ -59,7 +59,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="cultistrobes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
     <Item Identifier="rituallantern" />
   </inventory>
 </Character>

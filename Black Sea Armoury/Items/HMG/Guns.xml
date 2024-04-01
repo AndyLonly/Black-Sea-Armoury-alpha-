@@ -191,7 +191,7 @@
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
       <Attack structuredamage="3" severlimbsprobability="0.15" itemdamage="10" targetforce="0.5" penetration="0.5">
         <Affliction identifier="gunshotwound" strength="28" />
-        <Affliction identifier="lacerations" strength="12"/>
+        <Affliction identifier="gunshotwound" strength="18" probability="0.25" />
         <Affliction identifier="bleeding" strength="22"/>
         <Affliction identifier="bleeding" strength="30" probability="0.15" />
         <Affliction identifier="stun" strength="0.1" />

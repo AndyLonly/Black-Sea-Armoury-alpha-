@@ -68,10 +68,10 @@
     <AiTarget soundrange="2000" />
   </Item>
   <!-- Black Sea Arsenal -->  
-  <Item name="黑海武库" identifier="arsenal_bw" aliases="shield, boarding shiled, backpack" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem,toolbelt" waterproof="true" impactsoundtag="impact_metal_heavy" health="2500" damagedbyprojectiles="true">
+  <Item name="黑海武库" identifier="arsenal_bw" aliases="shield, boarding shiled, backpack" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem,toolbelt" waterproof="true" impactsoundtag="impact_metal_heavy" health="2000" damagedbyprojectiles="true">
     <Fabricate suitablefabricators="fabricator" requiredtime="50" requiresrecipe="True">
       <RequiredSkill identifier="weapons" level="100" />
-      <RequiredItem identifier="pta_bw" amount="2" />
+      <RequiredItem identifier="bcs_bw" amount="2" />
       <RequiredItem identifier="shield_bw" />
       <RequiredItem identifier="bandolierbw4" />
     </Fabricate>
@@ -141,7 +141,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!-- Boarding Shield -->
-  <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem" impactsoundtag="impact_metal_light" health="2000" damagedbyprojectiles="true">
+  <Item name="" identifier="shield_bw" aliases="shield, boarding shiled" scale="0.35" category="Equipment,gunsmith" description="" tags="mediumitem" impactsoundtag="impact_metal_light" health="1000" damagedbyprojectiles="true">
     <Price baseprice="1700" soldeverywhere="false" minleveldifficulty="35">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.5" minavailable="1" />
@@ -309,15 +309,15 @@
     <Sprite texture="%ModDir%/Boarding Shield/psbw.png" sourcerect="0,0,168,48" depth="0.55" origin="0.5,0.0" />
     <Body radius="168" width="48" density="40" />
     <Holdable slots="Any,RightHand" controlpose="true" aimpos="60,0" handle1="-60,-21" msg="ItemMsgPickUpSelect" />
-    <RepairTool firedamage="150.0" structurefixamount="-3" range="250" barrelpos="100,-15" combatpriority="40" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="3" penetration="0.1">
+    <RepairTool firedamage="150.0" structurefixamount="-3" range="280" barrelpos="100,-15" combatpriority="40" repairmultiple="true" repairthroughwalls="false" maxoverlappingwalldist="0.0" repairthroughholes="true" levelwallfixamount="-5.0" targetforce="3" penetration="0.1">
       <Sound file="Content/Items/Weapons/ExplosionSmall1.ogg" type="OnUse" range="2000" selectionmode="Random" />
       <Sound file="Content/Items/Weapons/ExplosionSmall2.ogg" type="OnUse" range="2000" />
       <Sound file="Content/Items/Weapons/ExplosionSmall3.ogg" type="OnUse" range="2000" />
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-25.0" Condition="-25.0" />
-      <StatusEffect type="OnUse" targettype="UseTarget" targets="ore" Condition="-30.0" />
-      <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-15.0" />
+      <StatusEffect type="OnUse" targettype="UseTarget" targets="ore" Condition="-40.0" />
+      <StatusEffect type="OnSuccess" targettype="UseTarget" Condition="-20.0" />
       <StatusEffect type="OnUse" targettype="Limb" severlimbsprobability="0.5">
-        <Affliction identifier="burn" strength="60" />
+        <Affliction identifier="burn" strength="20" />
       </StatusEffect>
       <ParticleEmitter particle="plasma" particlespersecond="50" copyentityangle="true" />
       <ParticleEmitterHitStructure particle="plasmaspark" particlespersecond="100" anglemin="-40" anglemax="40" velocitymin="100" velocitymax="800" />
@@ -328,7 +328,7 @@
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <Fixable identifier="structure" />
       <RequiredSkill identifier="weapon" level="30" />
-      <StatusEffect type="OnUse" target="This" condition="-0.55" disabledeltatime="true" />
+      <StatusEffect type="OnUse" target="This" condition="-0.35" disabledeltatime="true" />
       <StatusEffect type="Always" target="This" Condition="8">
         <Conditional condition="gt 0" />
       </StatusEffect>

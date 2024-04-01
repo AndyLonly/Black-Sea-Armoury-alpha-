@@ -77,7 +77,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="3">
     <Item Identifier="smgmagazine_bw" />
@@ -88,6 +88,6 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
   </inventory>
 </Character>

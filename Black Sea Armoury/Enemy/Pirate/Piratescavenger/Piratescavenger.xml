@@ -86,6 +86,6 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="pio_bw2_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
   </inventory>
 </Character>

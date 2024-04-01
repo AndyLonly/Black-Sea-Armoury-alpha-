@@ -11,7 +11,7 @@
   <Item file="%ModDir%/BA/BA.xml" />
   <Item file="%ModDir%/LC/Laser Cannon.xml" />
   <Item file="%ModDir%/BT/Boarding Torpedo.xml" />
-  <Item file="%ModDir%/SMG/Guns.xml" />
+  <Item file="%ModDir%/items/SMG/Guns.xml" />
   <Item file="%ModDir%/SG/SG.xml" />
   <Item file="%ModDir%/AXE/AXE.xml" />
   <Item file="%ModDir%/TS/Tatical Scanner.xml" />
@@ -86,5 +86,6 @@
   <Character file="%ModDir%/Enemy/Coalition/Coalitionriflemanpod/Coalitionriflemanpod.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitionveteranpod/Coalitionveteranpod.xml" />
   <Character file="%ModDir%/Enemy/Coalition/Coalitioneyeofear/Coalitioneyeofear.xml" />
+  <Character file="%ModDir%/Enemy/EPod/EPod.xml" />
   <item file="%ModDir%/Items/Materials/materials.xml" />
 </contentpackage>

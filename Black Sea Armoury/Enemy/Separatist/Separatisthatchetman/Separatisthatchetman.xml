@@ -53,7 +53,7 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="armored_miningsuit_bw3_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />    <Item Identifier="bw_axe" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />    <Item Identifier="bw_axe" />
     <Item Identifier="hyperzine" amount="4"/>
     <Item Identifier="rum" />
   </inventory>

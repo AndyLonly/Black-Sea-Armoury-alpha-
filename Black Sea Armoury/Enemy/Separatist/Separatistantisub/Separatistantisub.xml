@@ -56,6 +56,6 @@
     <Item slot="Card" Identifier="idcard" />
     <Item slot="OuterClothes" Identifier="armored_miningsuit_bw3_e" />
     <Item slot="InnerClothes" Identifier="pirateclothes" />
-    <Item slot="Head" Identifier="ballistichelmetbw" />
+    <Item slot="Head" Identifier="ballistichelmetbw_hide" />
   </inventory>
 </Character>

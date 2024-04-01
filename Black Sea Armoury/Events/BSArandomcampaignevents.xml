@@ -346,8 +346,10 @@ MonsterEvent
         <MonsterEvent characterfile="Piratecommando" minamount="1" maxamount="3" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Piratedismantler" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>
-      <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
-      <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+      <Eventset identifier="BAE_boardingparty_3" chooserandom ="true">
+        <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+        <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+      </Eventset>
     </EventSet>
 
     <!--40% or 10 min-->
@@ -400,7 +402,7 @@ MonsterEvent
         <MonsterEvent characterfile="Pirategrenadier" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>
       <Eventset identifier="BAE_droppod_2" chooserandom ="true" scatter="2000">
-        <MonsterEvent characterfile="Piratescavengerpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+        <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Piratedismantlerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>
@@ -445,8 +447,10 @@ MonsterEvent
         <MonsterEvent characterfile="Piratecommando" minamount="1" maxamount="3" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Piratedismantler" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>
-      <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="2" spawntype="mainpath,sidepath" />
-      <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+      <Eventset identifier="BAE_boardingparty_3" chooserandom ="true">
+        <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+        <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
+      </Eventset>
     </EventSet>
 
     <!--80%-->
@@ -493,7 +497,7 @@ MonsterEvent
         <MonsterEvent characterfile="Pirategrenadier" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>
       <Eventset identifier="BAE_droppod_2" chooserandom ="true" scatter="2000">
-        <MonsterEvent characterfile="Piratescavengerpod" minamount="0" maxamount="1" spawntype="mainpath,sidepath" />
+        <MonsterEvent characterfile="Piratescavengerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Pirateriflemanpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
         <MonsterEvent characterfile="Piratedismantlerpod" minamount="1" maxamount="1" spawntype="mainpath,sidepath" />
       </Eventset>

@@ -2,7 +2,7 @@
 <Items>
     <!--make it like a pucs so NPC will keep wearing and noninteractable by players -->
     <!-- Corsair enemy -->
-    <Item name="" identifier="corsairar_bw_e" aliases="worker hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,divingsuit,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus ="true" nonplayerteaminteractable="true">
+  <Item name="" identifier="corsairar_bw_e" aliases="worker hardsuit" category="Equipment" tags="diving,divinggear_wearableindoors,provocative,deepdiving,mech" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" hideinmenus ="true" nonplayerteaminteractable="true">
     <InventoryIcon texture="%ModDir%/BA/SYS3.png" sourcerect="0,0,256,256" />
     <Sprite name="Diving Suit Item" texture="%ModDir%/BA/PR.png" sourcerect="0,0,320,520" depth="0.55" origin="0.5,0.52" />
     <ContainedSprite name="Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/BA/P01.png" sourcerect="12,30,77,209" depth="0.55" origin="-0.12,-0.13" />
@@ -149,7 +149,7 @@
         <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.175" setvalue="true" disabledeltatime="true">
             <Conditional Voltage="lte 0.5" />
         </StatusEffect>
-        <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.5" setvalue="true" comparison="And">
+        <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1" setvalue="true" comparison="And">
             <Conditional InWater="true" />
             <Conditional Voltage="gt 0.5" />
         </StatusEffect>
@@ -286,7 +286,6 @@
           <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="internaldamage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
           <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.3" damagesound="LimbArmor" />
           <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
-          <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" damagesound="LimbArmor" />
           <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.75" probabilitymultiplier="0.75" damagesound="LimbArmor" />
         <SkillModifier skillidentifier="mechanical" skillvalue="20" />
         <SkillModifier skillidentifier="electrical" skillvalue="20" />
@@ -840,5 +839,15 @@
       <Containable items="40mmparalyxgrenade" />
     </ItemContainer>
     <aitarget maxsightrange="1500" />
+  </Item>
+  <!-- Armored Helmet -->
+  <Item name="" identifier="ballistichelmetbw_hide" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate" description="" impactsoundtag="impact_metal_heavy" scale="0.4" hideinmenus="true" nonplayerteaminteractable="true">
+    <Sprite name="Armored helmet" texture="%ModDir%/TS/BC3.png" sourcerect="208,214,92,81" depth="0.6" origin="0.5,0.5" />
+    <Body radius="30" density="50" />
+    <Wearable slots="Head" armorvalue="20.0" msg="ItemMsgPickUpSelect">
+      <damagemodifier afflictionidentifiers="burn,blunttrauma,lacerations,gunshotwound,bitewounds,stun" armorsector="0.0,360.0" damagemultiplier="0.2" />
+      <damagemodifier afflictionidentifiers="concussion" armorsector="0.0,360.0" damagemultiplier="0.0" />
+      <sprite name="Armored helmet Wearable" texture="%ModDir%/TS/BC3.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hidewearablesoftype="hair" sourcerect="208,214,92,81" origin="0.6,0.6" />
+    </Wearable>
   </Item>
 </Items>

@@ -85,8 +85,8 @@
   </Item>
   <!-- 7.62mm Magazine (Magazine for CQB SMG) -->
   <Item name="cqbmag" identifier="smgmagazine_bw_e" scale="0.5" category="Equipment" cargocontaineridentifier="metalcrate" linkable="true" description="" tags="smallitem,smgmagazine_bw,gunsmith" impactsoundtag="impact_metal_light" hideinmenus="true" maxstacksize="8">
-    <InventoryIcon texture="%ModDir%/SMG/smg mag.png" sourcerect="0,0,36,44" />
-    <Sprite texture="%ModDir%/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/SMG/smg mag.png" sourcerect="0,0,36,44" />
+    <Sprite texture="%ModDir%/items/SMG/smg mag.png" depth="0.54" sourcerect="0,0,36,44" origin="0.5,0.5" />
     <Body width="30" height="40" density="50" />
     <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true" SpawnWithId="smground_bw" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
       <Containable items="smground_bw" />

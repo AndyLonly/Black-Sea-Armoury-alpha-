@@ -169,8 +169,8 @@
   </Item>
   <!-- CQB SMG enemy-->
   <Item name="cqbsmg" identifier="smg_bw_e" category="Equipment" description="" cargocontaineridentifier="metalcrate" tags="smgtype,smallitem,weapon,gun,gunsmith" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
-    <InventoryIcon texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
-    <Sprite texture="%ModDir%/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
+    <InventoryIcon texture="%ModDir%/items/SMG/SMG.png" sourcerect="0,00,180,72" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/items/SMG/SMG.png" sourcerect="0,00,180,70" depth="0.55" origin="0.5,0.5" />
     <Body width="140" height="60" density="50" />
     <Holdable slots="RightHand,LeftHand" controlpose="true" aimpos="70,5" handle1="-25,-7" msg="ItemMsgPickUpSelect" />
     <RangedWeapon reload="0.15" barrelpos="14,6" spread="8" unskilledspread="18" combatPriority="40" drawhudwhenequipped="true" crosshairscale="0.2">
@@ -1080,9 +1080,8 @@
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
         <SpawnItem identifier="prg_ammo" spawnposition="ThisInventory" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer" spawnItemRandomly="True">
-        <SpawnItem identifier="feye_depthchargeshell" spawnposition="ThisInventory" />
-        <SpawnItem identifier="feye_depthchargeshell_emp" spawnposition="ThisInventory" />
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer">
+        <SpawnItem identifier="prg_ammo" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
@@ -1374,42 +1373,42 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--Coalitioneyeofear railgun-->
-  <Item name="Boom" identifier="feye_depthchargeshell" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
-    <Deconstruct time="10">
-      <Item identifier="iron" />
-      <Item identifier="uex" />
-    </Deconstruct>
-    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,128,64,64" origin="0.5,0.5" />
-    <Sprite texture="TurretsAndDepthCharges.png" sourcerect="0,0,130,89" depth="0.55" origin="0.5,0.5" />
-    <Body width="128" height="85" density="20" />
-    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="1" damagedoors="true">
-      <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.5" targetforce="1000">
-        <Affliction identifier="explosiondamage" strength="250" />
-        <Affliction identifier="bleeding" strength="50" />
-        <Affliction identifier="stun" strength="15" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+  <Item name="Experimentalrailgun" identifier="feye_railgun" aliases="portable_rail_gun,prg" description="" category="Equipment" cargocontaineridentifier="metalcrate" tags="turret,mediumitem,weapon,gun,gunsmith" Scale="0.65" impactsoundtag="impact_metal_heavy" hideinmenus="true" nonplayerteaminteractable="true">
+    <Wearable slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select">
+      <sprite name="Autoshogun Worn" texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" origin="0.5,0.9" canbehiddenbyotherwearables="false" rotation="90" inheritlimbdepth="false" limb="Torso" ignorelimbscale="true" scale="0.65" />
+    </Wearable>
+    <InventoryIcon texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,124" />
+    <Sprite texture="%ModDir%/PRG/PRG.png" sourcerect="0,0,280,125" depth="0.55" />
+    <Body width="254" height="96" density="40" />
+    <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="30,10" aimpos="30,10" handle1="8,-16" handle2="96,-32" holdangle="-40" msg="ItemMsgPickUpSelect" />
+    <RangedWeapon barrelpos="160,22" spread="10" reload="15" combatPriority="75" drawhudwhenequipped="true" crosshairscale="0.1">
+      <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
+      <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
+      <ParticleEmitter particle="muzzleflashrailgun" particleamount="1" velocitymin="50" velocitymax="100" />
+      <sound file="Content/Items/Weapons/Railgun1.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun2.ogg" range="6000" type="OnUse" />
+      <sound file="Content/Items/Weapons/Railgun3.ogg" range="6000" type="OnUse" />
+      <ChargeSound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="3000" />
+      <StatusEffect type="OnUse">
+        <Explosion range="100.0" force="6" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="false" camerashake="9.0" />
       </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-100.0" setvalue="true">
-        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000"/>
-        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000"/>
-        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000"/>
-        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
-        <Explosion range="250.0" ballastfloradamage="100" structuredamage="50" itemdamage="200" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
-          <Affliction identifier="explosiondamage" strength="250" />
-          <Affliction identifier="stun" strength="7" />
-        </Explosion>
+      <StatusEffect type="OnUse" target="This" targetitemcomponent="ItemContainer" spawnItemRandomly="True">
+        <SpawnItem identifier="rg_bw_n_frag" spawnposition="ThisInventory" />
+        <SpawnItem identifier="rg_bw_n_dirty" spawnposition="ThisInventory" />
+        <SpawnItem identifier="prg_ammo" spawnposition="ThisInventory" />
+        <SpawnItem identifier="prg_ammo_feye" spawnposition="ThisInventory" />
       </StatusEffect>
-      <!-- Remove the item after exploding -->
-      <StatusEffect type="OnActive" target="This" Condition="-100" delay="60" stackable="false"/>
-      <StatusEffect type="OnBroken" target="This">
+      <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
-    </Projectile>
+    </RangedWeapon>
+    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="prg_ammo">
+      <Containable items="prg_ammo,prg_ammo_feye"/>
+    </ItemContainer>
+    <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Emp Boom" identifier="feye_depthchargeshell_emp" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" health="50" cargocontaineridentifier="">
+  <Item name="Boom" identifier="feye_depthchargeshell" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
     <Deconstruct time="10">
       <Item identifier="iron" />
       <Item identifier="uex" />
@@ -1418,16 +1417,8 @@
     <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="0,0,130,89" depth="0.55" origin="0.5,0.5" />
     <Body width="128" height="85" density="20" />
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
-    <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="1" damagedoors="true">
-      <Attack structuredamage="100" itemdamage="100" severlimbsprobability="5" penetration="0.5" targetforce="1000">
-        <Affliction identifier="explosiondamage" strength="250" />
-        <Affliction identifier="bleeding" strength="50" />
-        <Affliction identifier="stun" strength="15" />
-      </Attack>
-      <StatusEffect type="OnActive" target="This">
-        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
-      </StatusEffect>
-      <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-100.0" setvalue="true">
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <StatusEffect type="OnImpact" target="This">
         <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="50000"/>
         <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="50000"/>
         <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="50000"/>
@@ -1437,7 +1428,39 @@
           <Affliction identifier="stun" strength="7" />
         </Explosion>
       </StatusEffect>
-      <StatusEffect type="Always" target="This" Condition="-10" delay="10" stackable="false" checkconditionalalways="true">
+      <StatusEffect type="Always" target="This" delay="180" Condition="-100" setvalue="true"/>
+      <StatusEffect type="Always" target="This" delay="10" stackable="false">
+        <sound file="Content/Items/Weapons/IncendiumGrenade.ogg" range="3000" />
+        <Fire size="300.0" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="400.0" ballastfloradamage="200" structuredamage="350" itemdamage="1000" force="25" severlimbsprobability="4" decal="explosion" decalsize="0.75" penetration="0.8">
+          <Affliction identifier="explosiondamage" strength="200" />
+          <Affliction identifier="burn" strength="80"/>
+          <Affliction identifier="bleeding" strength="10"/>
+          <Affliction identifier="lacerations" strength="10" />
+          <Affliction identifier="stun" strength="10" />
+        </Explosion>
+        <SpawnItem identifier="mph_ammo_shell" spawnposition="This" count="80" aimspread="360" rotationtype="Collider" rotation="0" />
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="Emp Boom" identifier="feye_depthchargeshell_emp" tags="depthchargeammo" category="Weapon" sonarsize="5" scale="0.4" impactsoundtag="impact_metal_heavy"  cargocontaineridentifier="">
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="uex" />
+    </Deconstruct>
+    <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="512,128,64,64" origin="0.5,0.5" />
+    <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="0,0,130,89" depth="0.55" origin="0.5,0.5" />
+    <Body width="128" height="85" density="20" />
+    <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="5.0">
+      <StatusEffect type="Always" target="This" delay="180" Condition="-100" setvalue="true"/>
+      <StatusEffect type="Always" target="This" delay="10" stackable="false">
         <Explosion range="1000.0" empstrength="0.5" camerashake="2" stun="0" force="2.0" flames="false" smoke="false" shockwave="false" sparks="true" underwaterbubble="false" />
         <!-- separate smaller explosion for EMP affliction so it doesn't fry guardians -->
         <Explosion range="400.0" camerashake="0" stun="0" force="0" flames="false" smoke="false" shockwave="false" sparks="false" underwaterbubble="false" >
@@ -1457,6 +1480,46 @@
           <Affliction identifier="stun" strength="5" />
           <Affliction identifier="emp" strength="100" multiplybymaxvitality="true" />
         </Explosion>
+        <Remove />
+      </StatusEffect>
+    </Projectile>
+  </Item>
+  <Item name="" identifier="prg_ammo_feye" aliases="ap rocket,rocket ap,ap_rocket" category="Weapon" subcategory="Black Sea Armoury" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="ammobox,mediumitem,mobilecontainer,gunsmith,heavyammotype" Scale="0.36" impactsoundtag="impact_metal_light"  hideinmenus="true" nonplayerteaminteractable="true">
+    <InventoryIcon texture="%ModDir%/PRG/shell.png" sourcerect="0,0,64,16" />
+    <Sprite texture="%ModDir%/PRG/shell.png" sourcerect="0,0,65,16" depth="0.55" />
+    <Body width="160" height="32" density="12" />
+    <Holdable slots="RightHand,LeftHand" holdpos="0,0" handle1="0,0" holdangle="70" aimable="false" msg="ItemMsgPickUpSelect" />
+    <Projectile characterusable="false" launchimpulse="85.0" maxtargetstohit="2" severlimbsprobability="2">
+      <Attack structuredamage="50" itemdamage="50" severlimbsprobability="5" penetration="0.5" targetforce="1000">
+        <Affliction identifier="explosiondamage" strength="100" />
+        <Affliction identifier="bleeding" strength="20" />
+        <Affliction identifier="stun" strength="10" />
+      </Attack>
+      <StatusEffect type="OnActive" target="This" allowwhenbroken="true" Condition="-100.0" setvalue="true" delay="5"/>
+      <StatusEffect type="OnActive" target="This">
+        <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="This" condition="-20">
+        <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="20000" />
+        <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="20000" />
+        <Explosion range="350.0" structuredamage="10" itemdamage="10" force="50.0" severlimbsprobability="1.5">
+          <Affliction identifier="explosiondamage" strength="10" />
+          <Affliction identifier="stun" strength="5" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget">
+        <Conditional entitytype="eq Structure" />
+        <Conditional hastag="eq door" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-30" anglemax="30" particleamount="5" velocitymin="-10" velocitymax="-300" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="4" velocitymin="10" velocitymax="400" scalemin="1.5" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="-25" anglemax="25" particleamount="4" velocitymin="50" velocitymax="900" scalemin="1" scalemax="2" />
+        <ParticleEmitter particle="shrapnel" copyentityangle="false" anglemin="0" anglemax="360" particleamount="5" velocitymin="50" velocitymax="400" scalemin="1" scalemax="1" />
+      </StatusEffect>
+      <StatusEffect type="OnImpact" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-100.0" Condition="-100.0" />
+      <StatusEffect type="OnBroken" target="This" disabledeltatime="true" delay="0.1" spawnItemRandomly="True">
+        <SpawnItem identifier="feye_depthchargeshell" spawnposition="This" />
+        <SpawnItem identifier="feye_depthchargeshell_emp" spawnposition="This" />
         <Remove />
       </StatusEffect>
     </Projectile>
