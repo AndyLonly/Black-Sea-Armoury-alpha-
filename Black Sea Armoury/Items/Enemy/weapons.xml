@@ -226,24 +226,6 @@
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 75" />
-        <Conditional recoilstabilized="lte 0" />
-        <Affliction identifier="stun" strength="0.1" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 50" />
-        <Conditional recoilstabilized="lte 0" />
-        <Affliction identifier="stun" strength="0.25" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="and">
-        <Conditional skillrequirement="true" weapons="lt 25" />
-        <Conditional recoilstabilized="lte 0" />
-        <Affliction identifier="stun" strength="0.75" />
-      </StatusEffect>
-      <StatusEffect type="OnUse" target="Contained">
-        <Use />
-      </StatusEffect>
       <RequiredItems items="lmgmagazine_bw_e" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
       <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
@@ -266,7 +248,7 @@
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
   <!--assaultrifle from vanilla-->
-  <Item name="vanillaar" identifier="assaultrifle_bae" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
+  <Item name="vanillaar" identifier="assaultrifle_bw_e" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.5" impactsoundtag="impact_metal_light" hideinmenus="true" nonplayerteaminteractable="true">
     <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" origin="0.5,0.5" />
     <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="276,63,233,62" depth="0.55" origin="0.5,0.5" />
     <Body width="220" height="50" density="25" />

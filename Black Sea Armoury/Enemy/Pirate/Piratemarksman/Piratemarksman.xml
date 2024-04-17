@@ -58,7 +58,7 @@
     <Item slot="Head" Identifier="ballistichelmetbw_hide" />
   </inventory>
   <inventory arrowslot="9" Slots="Card, Head, InnerClothes, OuterClothes, LeftHand, RightHand, Any, Any, Any, Any, HealthInterface" AccessibleWhenAlive="False" Commonness="2">
-    <Item Identifier="spar_45magazine"/>
+    <Item Identifier="8_45magazine_bw"/>
     <Item Identifier="rum" />
     <Item Identifier="hyperzine" />
     <Item Identifier="scrap" amount="2"/>

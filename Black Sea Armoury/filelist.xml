@@ -88,4 +88,7 @@
   <Character file="%ModDir%/Enemy/Coalition/Coalitioneyeofear/Coalitioneyeofear.xml" />
   <Character file="%ModDir%/Enemy/EPod/EPod.xml" />
   <item file="%ModDir%/Items/Materials/materials.xml" />
+  <Factions file="%ModDir%/Map/factions.xml" />
+  <NPCSets file="%ModDir%//NPC/OutpostNpcs.xml" />
+	<Character file="%ModDir%/Enemy/Coalition/Coalitionheavy/HumanHeavy.xml" />
 </contentpackage>

@@ -85,40 +85,42 @@
   <talentname.apolloassistsystem_bw>Apollo Assistance System</talentname.apolloassistsystem_bw>
   <talentdescription.apolloassistsystem_bw> When driving Apollo, inflict additional 100% chemical burns, and after healing the wounded, the wounded will be assisted by Apollo nanobots within 60 seconds. </talentdescription.apolloassistsystem_bw>
   <!--AR.xml-->
+  <label.semiautomatic>Semi-auto</label.semiautomatic>
+  <label.lighting>Lighting system</label.lighting>
   <entityname.spar-408>SPAR-408 Special Designated Marksman Rifle</entityname.spar-408>
   <entitydescription.spar-408>A designated marksman rifle designed by the Iron Alliance to annihilate high-threat targets. </entitydescription.spar-408>
-  <entityname.spar_7magazine>SPAR-408 Kraken Armor-Piercing Magazine(7)</entityname.spar_7magazine>
-  <entitydescription.spar_7magazine>7 rounds of .408 rifle magazines, the armor-piercing rounds used are enough to penetrate the armor of most creatures. </entitydescription.spar_7magazine>
-  <entityname.spar_7magazine_fmj>SPAR-408 Kun Full Metal Jacket Magazine(7)</entityname.spar_7magazine_fmj>
-  <entitydescription.spar_7magazine_fmj>7 rounds .408 rifle magazine, using full metal jacket bullets capable of inflicting a lot of damage inside the target.</entitydescription.spar_7magazine_fmj>
-  <entityname.spar_7magazine_jhp>SPAR-408 Scylla Full Metal Jacket Hollow Point Magazine(7)</entityname.spar_7magazine_jhp>
-  <entitydescription.spar_7magazine_jhp>7 rounds of .408 rifle magazines, using full metal jacketed hollow point bullets, capable of inflicting massive damage and massive stopping power inside the target. </entitydescription.spar_7magazine_jhp>
+  <entityname.408_7magazine_bw>SPAR-408 Kraken Armor-Piercing Magazine(7)</entityname.408_7magazine_bw>
+  <entitydescription.408_7magazine_bw>7 rounds of .408 rifle magazines, the armor-piercing rounds used are enough to penetrate the armor of most creatures. </entitydescription.408_7magazine_bw>
+  <entityname.408fmj_7magazine_bw>SPAR-408 Kun Full Metal Jacket Magazine(7)</entityname.408fmj_7magazine_bw>
+  <entitydescription.408fmj_7magazine_bw>7 rounds .408 rifle magazine, using full metal jacket bullets capable of inflicting a lot of damage inside the target.</entitydescription.408fmj_7magazine_bw>
+  <entityname.408jhp_7magazine_bw>SPAR-408 Scylla Full Metal Jacket Hollow Point Magazine(7)</entityname.408jhp_7magazine_bw>
+  <entitydescription.408jhp_7magazine_bw>7 rounds of .408 rifle magazines, using full metal jacketed hollow point bullets, capable of inflicting massive damage and massive stopping power inside the target. </entitydescription.408jhp_7magazine_bw>
   <entityname.spar-338>SPAR-338 Special Machine Gun</entityname.spar-338>
   <entitydescription.spar-338>A precise and deadly machine gun designed by the Iron Alliance to defend against the ever-increasing danger of monsters.</entitydescription.spar-338>
-  <entityname.spar_24magazine>SPAR-338 Magazine (24)</entityname.spar_24magazine>
-  <entitydescription.spar_24magazine>24 rounds titanium .338 Lapua Magnum magazine. </entitydescription.spar_24magazine>
-  <entityname.spar_60magazine>SPAR-338 Magazine (60)</entityname.spar_60magazine>
-  <entitydescription.spar_60magazine>60 rounds titanium .338 Lapua Magnum Extended machine gun magazine for suppressing fire. </entitydescription.spar_60magazine>
+  <entityname.338_24magazine_bw>SPAR-338 Magazine (24)</entityname.338_24magazine_bw>
+  <entitydescription.338_24magazine_bw>24 rounds titanium .338 Lapua Magnum magazine. </entitydescription.338_24magazine_bw>
+  <entityname.338_60magazine_bw>SPAR-338 Magazine (60)</entityname.338_60magazine_bw>
+  <entitydescription.338_60magazine_bw>60 rounds titanium .338 Lapua Magnum Extended machine gun magazine for suppressing fire. </entitydescription.338_60magazine_bw>
   <entityname.spar-8s>SPAR-8S Special Automatic Team Sniper Rifle</entityname.spar-8s>
   <entitydescription.spar-8s>A fully automatic squad designated marksman rifle designed by the Iron Alliance, with an extended barrel and improved muzzle brake for significantly improved accuracy and armor penetration.</entitydescription.spar-8s>
   <entityname.spar-8>SPAR-8 Special Designated Marksman Rifle</entityname.spar-8>
   <entitydescription.spar-8>A fully automatic designated marksman rifle designed by the Iron Alliance, favored by elite troops. </entitydescription.spar-8>
-  <entityname.spar_45magazine>SPAR-8 Magazine (45)</entityname.spar_45magazine>
-  <entitydescription.spar_45magazine>A 45-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds, suitable for standard models.</entitydescription.spar_45magazine>
-  <entityname.spar_20magazine>SPAR-8 Magazine (20)</entityname.spar_20magazine>
-  <entitydescription.spar_20magazine>A 20-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds.</entitydescription.spar_20magazine>
+  <entityname.8_45magazine_bw>SPAR-8 Magazine (45)</entityname.8_45magazine_bw>
+  <entitydescription.8_45magazine_bw>A 45-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds, suitable for standard models.</entitydescription.8_45magazine_bw>
+  <entityname.8_20magazine_bw>SPAR-8 Magazine (20)</entityname.8_20magazine_bw>
+  <entitydescription.8_20magazine_bw>A 20-round titanium 8×75mm rifle magazine using sniper armor-piercing rounds.</entitydescription.8_20magazine_bw>
   <entityname.spar-65>SPAR-65 Special Assault Rifle</entityname.spar-65>
-  <entitydescription.spar-65>Based on the SPAR-556A, this rifle features a 65mm heavy barrel and optimized ergonomic design.</entitydescription.spar-65>
-  <entityname.spar_50magazine>SPAR-65 Drum Magazine (50)</entityname.spar_50magazine>
-  <entitydescription.spar_50magazine>A 50-round 6.5×52mm rifle drum magazine that serves as a firepower suppressor within tactical teams.</entitydescription.spar_50magazine>
-  <entityname.spar-556a>SPAR-556A Special Assault Rifle</entityname.spar-556a>
+  <entitydescription.spar-65>Based on the spar-556a, this rifle features a 65mm heavy barrel and optimized ergonomic design.</entitydescription.spar-65>
+  <entityname.65_50magazine_bw>SPAR-65 Drum Magazine (50)</entityname.65_50magazine_bw>
+  <entitydescription.65_50magazine_bw>A 50-round 6.5×52mm rifle drum magazine that serves as a firepower suppressor within tactical teams.</entitydescription.65_50magazine_bw>
+  <entityname.spar-556a>spar-556a Special Assault Rifle</entityname.spar-556a>
   <entitydescription.spar-556a>An assault rifle designed by the Steel Alliance during its early formation, later upgraded with an extended barrel.</entitydescription.spar-556a>
-  <entityname.spar-556>SPAR-556 Special Assault Rifle</entityname.spar-556>
+  <entityname.spar-556>spar-556 Special Assault Rifle</entityname.spar-556>
   <entitydescription.spar-556>An assault rifle designed during the early formation of the Steel Alliance, criticized for lacking sufficient stopping power.</entitydescription.spar-556>
-  <entityname.spar_30magazine>SPAR-556 Magazine (30)</entityname.spar_30magazine>
-  <entitydescription.spar_30magazine>A 30-round 5.56×45mm rifle magazine using steel-core rounds.</entitydescription.spar_30magazine>
-  <entityname.spar_150magazine>SPAR-556 Drum Magazine (150)</entityname.spar_150magazine>
-  <entitydescription.spar_150magazine>A 150-round 5.56×45mm rifle drum magazine capable of providing firepower suppression within tactical teams.</entitydescription.spar_150magazine>
+  <entityname.556_30magazine_bw>spar-556 Magazine (30)</entityname.556_30magazine_bw>
+  <entitydescription.556_30magazine_bw>A 30-round 5.56×45mm rifle magazine using steel-core rounds.</entitydescription.556_30magazine_bw>
+  <entityname.556_150magazine_bw>spar-556 Drum Magazine (150)</entityname.556_150magazine_bw>
+  <entitydescription.556_150magazine_bw>A 150-round 5.56×45mm rifle drum magazine capable of providing firepower suppression within tactical teams.</entitydescription.556_150magazine_bw>
   <entityname.spsg-15>SPSG-15 Special Assault Shotgun</entityname.spsg-15>
   <entitydescription.spsg-15>A fully automatic, stockless shotgun with a unique revolving magazine mechanism, boasting a capacity of up to 15 rounds, making it an ideal choice for indoor CQB.</entitydescription.spsg-15>
   <entityname.spsg-4>SPSG-4 Special "Heavy Hammer" Shotgun</entityname.spsg-4>
