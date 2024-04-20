@@ -115,10 +115,7 @@
       <SubContainer capacity="3" maxstacksize="1">
         <Containable items="weapon,smallitem,mph_ammo,ammo,ammobox"/>
       </SubContainer>
-      <SubContainer capacity="1" maxstacksize="1">
-        <Containable items="mobilecontainer"/>
-      </SubContainer>
-      <SubContainer capacity="11">
+      <SubContainer capacity="12">
         <Containable items="smallitem,mph_ammo,ammo"/>
       </SubContainer>
     </ItemContainer>

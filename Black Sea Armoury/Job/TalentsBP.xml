@@ -962,9 +962,6 @@
     <Description tag="talentdescription.unlockrecipe">
       <Replace tag="[itemname]" value="entityname.pio_bw_med" color="gui.orange"/>
     </Description>
-    <Description tag="talentdescription.unlockrecipe">
-      <Replace tag="[itemname]" value="entityname.armored_hardsuit_bw_med" color="gui.orange"/>
-    </Description>
     <Description tag="talentdescription.firemanscarry"/>
     <Description tag="talentdescription.increaseappliedbuffduration">
       <Replace tag="[amount]" value="10" color="gui.green" />
@@ -978,7 +975,6 @@
     <AddedRecipe itemidentifier="bandolierbw2"/>
     <AddedRecipe itemidentifier="pio_bw"/>
     <AddedRecipe itemidentifier="pio_bw_med"/>
-    <AddedRecipe itemidentifier="armored_hardsuit_bw_med"/>
   </Talent>
   <Talent identifier="custommachinebw">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="5,2" sheetelementsize="128,128" />

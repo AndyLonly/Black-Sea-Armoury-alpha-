@@ -16,18 +16,15 @@
       <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
-      <StatusEffect type="OnUse" target="Contained">
-        <Use />
-      </StatusEffect>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="300round_bw" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="300blkround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="300round_bw">
-      <Containable items="300round_bw"/>
+    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="300blkround_bw">
+      <Containable items="300blkround_bw"/>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
   </Item>
@@ -46,9 +43,6 @@
       <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
-      <StatusEffect type="OnUse" target="Contained">
-        <Use />
-      </StatusEffect>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
         <SpawnItem identifiers="45round_bw" spawnposition="ThisInventory" />
       </StatusEffect>
@@ -76,18 +70,15 @@
       <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
-      <StatusEffect type="OnUse" target="Contained">
-        <Use />
-      </StatusEffect>
       <StatusEffect type="OnUse" target="This" disabledeltatime="true">
-        <SpawnItem identifiers="50round_bw" spawnposition="ThisInventory" />
+        <SpawnItem identifiers="50lbround_bw" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnNotContained" target="This">
         <Remove />
       </StatusEffect>
     </RangedWeapon>
-    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="50round_bw">
-      <Containable items="50round_bw"/>
+    <ItemContainer capacity="1" maxstacksize="1" spawnwithid="50lbround_bw">
+      <Containable items="50lbround_bw"/>
     </ItemContainer>
     <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
   </Item>
@@ -99,7 +90,7 @@
     <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
     <Projectile characterusable="false" hitscan="true" removeonhit="true" spread="4">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,50,175" scalemultiplier="1,0.5" />
-      <Attack structuredamage="1" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.3" penetration="0.05">
+      <Attack structuredamage="1" severlimbsprobability="0.35" itemdamage="0.5" targetforce="0.3" penetration="0">
         <Affliction identifier="gunshotwound" strength="8.5" />
         <Affliction identifier="gunshotwound" strength="2" probability="0.2" />
         <Affliction identifier="bleeding" strength="2" />
@@ -190,6 +181,9 @@
       <Sound file="Content/Items/Weapons/SMGsingleShot4.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot5.ogg" type="OnUse" range="3000" />
       <Sound file="Content/Items/Weapons/SMGsingleShot6.ogg" type="OnUse" range="3000" />
+			<StatusEffect type="OnUse">
+				<Explosion range="60.0" force="0.4" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+			</StatusEffect>
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
@@ -312,7 +306,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="2" itemdamage="3" severlimbsprobability="0.1" penetration="0.02">
-        <Affliction identifier="gunshotwound" strength="18" />
+        <Affliction identifier="gunshotwound" strength="16" />
         <Affliction identifier="gunshotwound" strength="12" probability="0.2" />
         <Affliction identifier="bleeding" strength="14" />
         <Affliction identifier="bleeding" strength="8" probability="0.3" />
@@ -431,7 +425,7 @@
     <Projectile characterusable="false" hitscan="true" removeonhit="true">
       <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,200,200,175" scalemultiplier="1,0.8" />
       <Attack structuredamage="1" targetforce="3" itemdamage="1" severlimbsprobability="0.25" penetration="0">
-        <Affliction identifier="gunshotwound" strength="26" />
+        <Affliction identifier="gunshotwound" strength="24" />
         <Affliction identifier="gunshotwound" strength="10" probability="0.4" />
         <Affliction identifier="bleeding" strength="16" />
         <Affliction identifier="bleeding" strength="10" probability="0.3" />

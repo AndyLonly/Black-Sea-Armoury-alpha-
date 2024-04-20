@@ -1,0 +1,90 @@
+物品：
+=调整物品的Tags等以优化AI逻辑
+=废料现在能够分解出有用的材料，小概率为珍惜材料
++引入新材料，为玩家提供更多制作和升级的可能性
+=盾牌现在能够背负
++新增Black Sea Arsenal，并且拥有强力盾击系统，以提供更丰富的游戏战术选择（按下生物攻击键"F"）
+=调整MEGA Plasma切割力，以改善武器平衡性
+
+近战武器：
+削弱Power combat system
+
+机甲：
++添加T3级别医疗机甲——阿波罗（Apollo），为玩家在战场上提供强大的医疗支援能力[缺少贴图，无法正常获取]
++添加T3级别化学战术机甲——喀耳刻（Carcus），为玩家提供化学战争中的战术优势[缺少贴图，无法正常获取]
+=大力神MKII移动至T3级别
+=调整机甲的制作材料，重新平衡防御力，毒抗性属性，移动速度，加成等
+=调整基础机甲和氧气电池的可购买数量以改善游戏体验
+=优化机载声纳（移除大部分机甲）
++引入灯开关功能，增强环境交互性
+
+Job:
+=修复默认装备缺少耳机
+=重新构思天赋树系统，以提供更深入的角色进阶和定制选择
+
+敌人：
+=大幅削弱头部护甲，现在相当于只佩戴防弹头盔，攻击头部能带来更多收入
+=重新调整敌人难度，现在难度过度应该会更加平滑
++加入跳帮仓，使怪物能够直接进入船体内部
++添加新的海盗NPC装备合集，丰富游戏中站点的敌人种类
++新增Boss 恐惧之眼 和 【文字被移除】[缺少贴图，无法正常获取]
++新站点任务和怪物任务，为玩家提供更多挑战和奖励
+
+远程武器：
++新增冲锋枪武器[缺少贴图，无法正常获取]：AG45、AG50、AG300
++新增步枪：SPAR556、SPAR556A、SPAR65、SPAR76、SPAR8、SPAR8S、SPAR93、SPAR338、SPAR408
++新增霰弹枪[缺少贴图，无法正常获取]：SPSG-4、SPSG-15、SPSG-8
++添加动态后坐力、半自动和栓动模式，增加武器操作的多样性和真实感
+=平衡枪械性能和制造材料，以提高游戏的整体平衡性
+
+阵营：
++新增黑海阵营，为游戏世界增添新的故事线和角色阵营[缺少贴图，无法正常获取]
+
+语言：
++加入日语
+
+
+Items:
+=Adjust the tags of items to optimize AI logic
+=Scrap can now be broken down into useful materials, with a small chance of yielding precious materials
++Introduce new materials to give players more options for crafting and upgrading
+=Shields can now be carried on the back.
++Add Black Sea Arsenal with a powerful shield bash system to provide richer tactical choices in the game (activate with the "F" key for biological attack)
+=Adjust MEGA Plasma cutting power to improve weapon balance.
+
+Melee Weapons:
+=Nerf Power combat system
+
+Mechs:
++Add Tier 3 medical mech - Apollo, to provide strong medical support on the battlefield[The Sprite is not finished, unable to obtain normally]
++Add Tier 3 chemical tactical mech - Carcus, to provide tactical advantages in chemical warfare[The Sprite is not finished, unable to obtain normally]
+=Adjust the crafting materials for mechs, rebalance their defense, poison resistance properties, mobility, buff, etc
+=Adjust the purchasable quantity of basic mechs and oxygen batteries to improve the gaming experience
+=Optimize onboard sonar (remove from most mechs)
++Introduce a light switch 
+
+
+Jobs:
+=Fix the default gear missing earphones.
+=Rework the talent tree system to provide deeper character progression and customization options.
+
+Enemies:
+=weaken head armor, now equivalent to wearing a bulletproof helmet.
+=Readjust enemy difficulty, now the difficulty transition should be smoother.
++Add Drop pod to allow monsters to directly enter the hull.
++Add new pirate NPC equipment sets to enrich the variety of enemies at sites.
++Introduce new boss "Eye of Fear" and [Text Removed]. [The Sprite is not finished, unable to obtain normally]
++New station missions and monster missions to offer players more challenges and rewards.
+
+Ranged Weapons:
++Introduce new submachine guns[The Sprite is not finished, unable to obtain normally]: AG45, AG50, AG300.
++Introduce new rifles: SPAR556, SPAR556A, SPAR65, SPAR76, SPAR8, SPAR8S, SPAR93, SPAR338, SPAR408.
++Introduce new shotguns[The Sprite is not finished, unable to obtain normally]: SPSG-4, SPSG-15, SPSG-8.
++Add dynamic recoil, semi-automatic and bolt-action modes to increase weapon operational diversity and realism.
+=Balance firearm performance and manufacturing materials to improve overall game balance.
+
+Factions:
+？introducing a new Black Sea faction to add a new storyline and character faction to the game world (details pending).
+
+Language:
+Add Japanese

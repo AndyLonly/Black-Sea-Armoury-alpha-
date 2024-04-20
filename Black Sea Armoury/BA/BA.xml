@@ -55,14 +55,14 @@
       <sprite texture="%ModDir%/BA/PR/LEG2.png" limb="LeftThigh" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.35,0.5310345" sourcerect="0,0,180,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="RightFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.48,0.4" sourcerect="0,0,260,140" />
       <sprite texture="%ModDir%/BA/PR/FOOT.png" limb="LeftFoot" sound="footstep_armor_heavy" inheritlimbdepth="true" hidelimb="true" hideotherwearables="true" inherittexturescale="true" origin="0.28,0.4" sourcerect="0,0,260,140" />
-	    <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="1.0" setvalue="true" disabledeltatime="true">
+	    <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.8" setvalue="true" disabledeltatime="true">
           <Conditional Voltage="gt 0.5" />
           <StatValue stattype="FlowResistance" value="0.9" />
-          <StatValue stattype="SwimmingSpeed" value="4.0" />
-          <Affliction identifier="Swift" strength="10" />
+          <StatValue stattype="SwimmingSpeed" value="2.0" />
+				<Affliction identifier="Swift" strength="10" />
           <Affliction identifier="recoilstabilized" amount="1" />
 	    </StatusEffect>
-      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.25" setvalue="true" disabledeltatime="true">
+      <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="0.1" setvalue="true" disabledeltatime="true">
         <Conditional Voltage="lte 0.5" />
       </StatusEffect>
       <StatusEffect type="OnWearing" target="This,Character" SpeedMultiplier="2.2" setvalue="true" comparison="And">
@@ -1893,8 +1893,8 @@
 		</CustomInterface>
 		<aitarget maxsightrange="1000" />
 	</Item>
-  <!-- X01 Battle Armor(Med)-->
-  <Item name="" identifier="armored_hardsuit_bw_med" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech,x01suit,divinggear_wearableindoors" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" botpriority="10">
+  <!-- X01 Battle Armor(SG)-->
+  <Item name="X01 Battle Armor(SG)" identifier="armored_hardsuit_bw_sg" aliases="military hardsuit" category="Diving" tags="diving,provocative,deepdiving,deepdivinglarge,mech,x01suit,divinggear_wearableindoors" scale="0.5" fireproof="true" description="" allowdroppingonswap="true" impactsoundtag="impact_metal_heavy" botpriority="10">
     <Price baseprice="3000" minleveldifficulty="25">
       <Price locationtype="outpost" multiplier="1.5" sold="false" />
       <Price locationtype="city" multiplier="1.25" sold="false" />
