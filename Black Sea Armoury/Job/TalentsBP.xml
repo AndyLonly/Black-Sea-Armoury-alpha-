@@ -592,7 +592,57 @@
       </Abilities>
     </AbilityGroupEffect>
   </Talent>
-  <!-- 战斗精通 -->
+	<Talent identifier="x01aassistsystem_bw">
+		<Description tag="talentdescription.x01aassistsystem_bw"/>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasItem identifier="X01A-Precision" />
+				<AbilityConditionAttackData tags="deadeyebw"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.10" addedpenetration="0.1"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasItem identifier="X01A-Fireman" />
+				<AbilityConditionAttackData tags="riflemanbonus"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasItem identifier="X01A-Breaker" />
+				<AbilityConditionAttackData tags="shotgun"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+				<CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.2" />
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasItem identifier="X01A-Breaker" />
+				<AbilityConditionAttackData tags="smg"/>
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" addedpenetration="0.1"/>
+			</Abilities>
+		</AbilityGroupEffect>
+		<AbilityGroupEffect abilityeffecttype="OnAttack">
+			<Conditions>
+				<AbilityConditionHasItem identifier="X01A-Breaker" />
+				<AbilityConditionAttackData tags="shotgun"/>
+				<AbilityConditionServerRandom randomchance="0.0005" />
+			</Conditions>
+			<Abilities>
+				<CharacterAbilityModifyAttackData implode="true"/>
+			</Abilities>
+		</AbilityGroupEffect>
+	</Talent>
+  <!-- offense specialization 战斗精通 -->
   <Talent identifier="olympian_offense">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">
@@ -689,11 +739,6 @@
     <Description tag="talentdescription.assistantsdontcount" />
     <Description tag="talentdescription.bonuslostondeath" />
     <Icon texture="Content/UI/TalentsIcons1.png" sheetindex="3,4" sheetelementsize="128,128" />
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-      <Abilities>
-        <CharacterAbilityModifyAttackData addedpenetration="0.1" />
-      </Abilities>
-    </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
       <Abilities>
         <CharacterAbilityGivePermanentStat statidentifier="trustbuildingbw" stattype="AttackMultiplier" value="0.015" maxvalue="0.2" targetallies="false"  removeondeath="true"/>
@@ -709,7 +754,7 @@
     </AbilityGroupEffect>
     <AddedRecipe itemidentifier="corsairar_bp"/>
   </Talent>
-  <!-- 防御精通 -->
+  <!-- defense specialization 防御精通 -->
   <Talent identifier="olympian_defense">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">
@@ -880,7 +925,7 @@
     </AbilityGroupEffect>
 		<AddedRecipe itemidentifier="armored_miningsuit_bw3"/>
   </Talent>
-  <!-- 后勤精通 -->
+  <!-- logistic specialization 后勤精通 -->
   <Talent identifier="olympian_logistic">
     <Icon texture="Content/UI/TalentsIcons2.png" sheetindex="2,4" sheetelementsize="128,128" />
     <Description tag="talentdescription.unlockrecipe">

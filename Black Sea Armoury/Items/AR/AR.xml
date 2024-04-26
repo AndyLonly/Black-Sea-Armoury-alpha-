@@ -93,7 +93,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,636,471,142" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,636,471,142" depth="0.55" origin="0.5,0.5" />
 		<Body width="236" height="71" density="60" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="71,6" handle1="-110,-15" handle2="-25,-8" holdangle="-30"/>
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="45,-20" aimpos="71,6" handle1="-110,-15" handle2="-25,-8" holdangle="-30"/>
 		<!--500 rounds per minute-->
 		<RangedWeapon reload="0.12" holdtrigger="true" barrelpos="100,16" spread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.22">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -131,7 +131,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,504,555,124" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,504,555,124" depth="0.55" origin="0.5,0.5" />
 		<Body width="277" height="69" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="65,-15" aimpos="85,8" handle1="-90,-25" handle2="-78,10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="65,-15" aimpos="85,8" handle1="-90,-25" handle2="-78,10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 		<!--600 rounds per minute-->
 		<RangedWeapon reload="0.2" holdtrigger="true" barrelpos="220,13" spread="5.8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -174,7 +174,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,368,494,124" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,368,494,124" depth="0.55" origin="0.5,0.5" />
 		<Body width="238" height="62" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="72,8" handle1="-74,-25" handle2="-34,10" holdangle="-50" msg="ItemMsgPickUpSelect"/>
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="72,8" handle1="-74,-25" handle2="-34,10" holdangle="-50" msg="ItemMsgPickUpSelect"/>
 		<!--600 rounds per minute-->
 		<RangedWeapon reload="0.1" holdtrigger="true" barrelpos="220,13" spread="8" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -213,7 +213,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,219,466,141" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,219,466,141" depth="0.55" origin="0.5,0.5" />
 		<Body width="233" height="70" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
 		<!--600 rounds per minute-->
 		<RangedWeapon reload="0.1" holdtrigger="true" barrelpos="180,10" spread="10.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -255,7 +255,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,110,454,108" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,110,454,108" depth="0.55" origin="0.5,0.5" />
 		<Body width="227" height="54" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="55,5" handle1="-82,-26" handle2="-25,2" holdpos="76,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+		<Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="55,5" handle1="-82,-26" handle2="-25,2" holdpos="76,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 		<!--600 rounds per minute-->
 		<RangedWeapon reload="0.1"  holdtrigger="true" barrelpos="85,13" spread="8.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -294,7 +294,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,0,404,108" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,0,403,108" depth="0.55" origin="0.5,0.5" />
 		<Body width="202" height="54" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-57,-26" handle2="0,2" holdpos="61,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
+		<Holdable slots="RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-57,-26" handle2="0,2" holdpos="61,-10" holdangle="-40" msg="ItemMsgPickUpSelect"/>
 		<!--857 rounds per minute-->
 		<RangedWeapon reload="0.07" holdtrigger="true" barrelpos="85,13" spread="12.5" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -481,7 +481,7 @@
 		<InventoryIcon texture="%ModDir%/items/AR/AR.png" sourcerect="0,1121,477,147" origin="0.5,0.5" />
 		<Sprite texture="%ModDir%/items/AR/AR.png" sourcerect="0,1121,477,147" depth="0.55" origin="0.5,0.5" />
 		<Body width="238" height="73" density="50" />
-		<Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
+		<Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="55,-10" aimpos="70,5" handle1="-92,-10" handle2="-55,2" holdangle="-40" msg="ItemMsgPickUpSelect" />
 		<!--480 rounds per minute-->
 		<RangedWeapon reload="0.146" reloadnoskill="0.28" reloadskillrequirement="70" holdtrigger="true" barrelpos="206,-10" spread="14" unskilledspread="28" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
 			<Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -1256,7 +1256,7 @@
       </StatusEffect>
       <StatusEffect type="OnActive" target="This" Condition="-100" delay="1" stackable="false"/>
       <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false"/>
-      <StatusEffect type="OnUse" target="This" delaytype="ReachCursor" Condition="-100"/>
+      <StatusEffect type="OnUse" target="This" delaytype="ReachCursor" Condition="-100" disabledeltatime="true" stackable="false"/>
       <StatusEffect type="OnImpact" target="UseTarget">
         <Conditional entitytype="eq Structure" />
         <Conditional hastag="eq door" />
@@ -1822,7 +1822,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name=".408" identifier="408round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".408" identifier="408round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <Body width="60" height="10" density="30" />
     <InventoryIcon texture="%ModDir%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -1850,7 +1850,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name=".408FMJ" identifier="408fmj_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".408FMJ" identifier="408fmj_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <Body width="60" height="10" density="30" />
     <InventoryIcon texture="%ModDir%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
     <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -1887,7 +1887,7 @@
       <Containable items=".408_core" />
     </ItemContainer>
   </Item>
-  <Item name=".408JHP" identifier="408jhp_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".408JHP" identifier="408jhp_round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <Body width="60" height="10" density="30" />
       <InventoryIcon texture="%ModDir%/PRG/rocket box.png" sourcerect="0,0,95,72" depth="0.55" />
       <Sprite texture="%ModDir%/PRG/shellb.png" sourcerect="0,0,36,9" origin="0.5,0.5" />
@@ -2469,7 +2469,7 @@
 		<Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
 	</Item>
   <!--8×74  SDMR-->
-  <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.25" impactsoundtag="impact_metal_light">
+  <Item name="SPAR-8 SDMR" identifier="spar-8s" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Black Sea Armoury" tags="mediumitem,weapon,gun,gunsmith,mountableweapon,precision" Scale="0.25" impactsoundtag="impact_metal_light">
     <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
     <PreferredContainer primary="wrecksecarmcab,abandonedsecarmcab" minamount="0" maxamount="1" spawnprobability="0.01" minleveldifficulty="25" />
     <Price baseprice="2400" sold="false">
@@ -2625,7 +2625,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="70" />
   </Item>
-  <Item name="8×74 mm AP" identifier="8sround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="8×74 mm AP" identifier="8sround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -2652,7 +2652,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-	<Item name="8×74 mm AP" identifier="8sapround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="8×74 mm AP" identifier="8sapround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 		<Body width="40" height="14" density="30" />
@@ -2886,7 +2886,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name="8×74 mm AP" identifier="8round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="8×74 mm AP" identifier="8round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
       <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
       <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
       <Body width="40" height="14" density="30" />
@@ -2913,7 +2913,7 @@
         </StatusEffect>
       </Projectile>
     </Item>
-	<Item name="8×74 mm AP" identifier="8apround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+	<Item name="8×74 mm AP" identifier="8apround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
 		<InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
 		<Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
 		<Body width="40" height="14" density="30" />
@@ -3684,7 +3684,7 @@
     </Quality>
     <SkillRequirementHint identifier="weapons" level="50" />
   </Item>
-  <Item name="5.56×45 mm NATO" identifier="556around_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.56×45 mm NATO" identifier="556around_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -3711,7 +3711,7 @@
       </StatusEffect>
     </Projectile>
   </Item>
-  <Item name="5.56×45 mm AP" identifier="556aapround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,riflemanbonus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name="5.56×45 mm AP" identifier="556aapround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,,deadeyebw" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />

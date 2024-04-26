@@ -14,7 +14,6 @@
         <TalentOption identifier="munitionsexpertise" />
       </TalentOptions>
     </SubTree>
-    <!-- 专精天赋树 -->
     <SubTree identifier="bwpl_offense" type="specialization" requires="bwpl_primary">
       <TalentOptions>
         <TalentOption identifier="olympian_offense" />

@@ -99,6 +99,7 @@
 	<Character file="%ModDir%/Enemy/Boss/深渊回响/深渊回响.xml" />
   <item file="%ModDir%/Items/Materials/materials.xml" />
   <Factions file="%ModDir%/Map/factions.xml" />
-  <NPCSets file="%ModDir%//NPC/OutpostNpcs.xml" />
+  <NPCSets file="%ModDir%/NPC/OutpostNpcs.xml" />
+	<OutpostConfig file="%ModDir%/NPC/OutpostGenerationParameters.xml" />
 	<Character file="%ModDir%/Enemy/Coalition/Coalitionheavy/HumanHeavy.xml" />
 </contentpackage>

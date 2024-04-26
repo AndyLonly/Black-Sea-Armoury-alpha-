@@ -236,12 +236,40 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <Sound file="%ModDir%/items/SMG/Sounds/AG-300-01ROUND-Analog.ogg" type="OnUse" volume="1.5" range="2000" selectionmode="Random"/>
-      <StatusEffect type="OnUse" target="This">
-        <Explosion range="60.0" force="1.1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
-      </StatusEffect>
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true">
+				<Conditional recoilstabilized="lte 0" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="60.0" force="1.35" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" Condition="-3.375" disabledeltatime="true"/>
+			<StatusEffect type="Always" target="This" Condition="12.5">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+				<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This" Condition="36" disabledeltatime="true" delay="3" stackable="false" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+			<!--dynamic spread-->
+			<StatusEffect type="Always" target="This" spread="-5.8" unskilledspread="-5.8" comparison="and">
+				<Conditional spread="gt 10.5" />
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" spread="10" unskilledspread="32" comparison="and" setvalue="true">
+				<Conditional spread="lt 10" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" spread="1.138" unskilledspread="1.138" disabledeltatime="true" comparison="and">
+				<Conditional spread="lt 16" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This,Character" spread="1.038" unskilledspread="1.038" disabledeltatime="true" comparison="and">
+				<Conditional recoilstabilized="lte 0" />
+				<Conditional spread="gt 16" />
+				<Conditional spread="lt 32" />
+			</StatusEffect>
       <RequiredItems items="300blkammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -298,7 +326,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name=".300 round" identifier="300blkround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".300 round" identifier="300blkround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smg" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -356,12 +384,40 @@
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
       <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
       <Sound file="%ModDir%/items/SMG/Sounds/AG-50-01ROUND-Analog.ogg" type="OnUse" volume="1.5" range="3000" selectionmode="Random"/>
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true">
+				<Conditional recoilstabilized="lte 0" />
+			</StatusEffect>
       <StatusEffect type="OnUse" target="This">
-        <Explosion range="150.0" force="1.5" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
+        <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="8.0" />
       </StatusEffect>
+			<StatusEffect type="OnUse" target="This" Condition="-5.5" disabledeltatime="true"/>
+			<StatusEffect type="Always" target="This" Condition="12">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+				<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="4" stackable="false" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+			<!--dynamic spread-->
+			<StatusEffect type="Always" target="This" spread="-5" unskilledspread="-5" comparison="and">
+				<Conditional spread="gt 12" />
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" spread="12" unskilledspread="40" comparison="and" setvalue="true">
+				<Conditional spread="lt 12" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" spread="1.9" unskilledspread="1.9" disabledeltatime="true" comparison="and">
+				<Conditional spread="lt 18" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This,Character" spread="1.63" unskilledspread="1.63" disabledeltatime="true" comparison="and">
+				<Conditional recoilstabilized="lte 0" />
+				<Conditional spread="gt 18" />
+				<Conditional spread="lt 40" />
+			</StatusEffect>
       <RequiredItems items="50lbammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -417,7 +473,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name=".50 round" identifier="50lbround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".50 round" identifier="50lbround_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smg" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />
@@ -477,12 +533,40 @@
       <Sound file="%ModDir%/items/SMG/Sounds/AG-45-01ROUND-Analog_1.ogg" type="OnUse" volume="1.5" range="3000" selectionmode="Random"/>
       <Sound file="%ModDir%/items/SMG/Sounds/AG-45-01ROUND-Analog_2.ogg" type="OnUse" volume="1.5" range="3000" />
       <Sound file="%ModDir%/items/SMG/Sounds/AG-45-01ROUND-Analog_3.ogg" type="OnUse" volume="1.5" range="3000" />
-      <StatusEffect type="OnUse" target="This">
-        <Explosion range="60.0" force="1" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
-      </StatusEffect>
+			<StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true">
+				<Conditional recoilstabilized="lte 0" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This">
+				<Explosion range="60.0" force="1.44" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="6.0" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" Condition="-2.51" disabledeltatime="true"/>
+			<StatusEffect type="Always" target="This" Condition="12">
+				<Conditional condition="gt 0" />
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This">
+				<Sound file="Content/Items/Weapons/ShotgunLoad1.ogg" type="OnUse" range="3000" selectionmode="Random" />
+				<Sound file="Content/Items/Weapons/ShotgunLoad2.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+				<Sound file="Content/Items/Weapons/ShotgunLoad3.ogg" type="OnUse" range="3000" selectionmode="Random"/>
+			</StatusEffect>
+			<StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="4" stackable="false" />
       <StatusEffect type="OnUse" target="Contained">
         <Use />
       </StatusEffect>
+			<!--dynamic spread-->
+			<StatusEffect type="Always" target="This" spread="-5" unskilledspread="-5" comparison="and">
+				<Conditional spread="gt 10.5" />
+			</StatusEffect>
+			<StatusEffect type="Always" target="This" spread="10.5" unskilledspread="35" comparison="and" setvalue="true">
+				<Conditional spread="lt 10.5" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This" spread="1.125" unskilledspread="1.125" disabledeltatime="true" comparison="and">
+				<Conditional spread="lt 16.5" />
+			</StatusEffect>
+			<StatusEffect type="OnUse" target="This,Character" spread="0.988" unskilledspread="0.988" disabledeltatime="true" comparison="and">
+				<Conditional recoilstabilized="lte 0" />
+				<Conditional spread="gt 16.5" />
+				<Conditional spread="lt 35" />
+			</StatusEffect>
       <RequiredItems items="45ammo" type="Contained" msg="ItemMsgAmmoRequired" />
       <RequiredSkill identifier="weapons" level="50" />
     </RangedWeapon>
@@ -538,7 +622,7 @@
     </ItemContainer>
     <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" msg="ItemMsgPickUpSelect" />
   </Item>
-  <Item name=".45 round" identifier="45round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+  <Item name=".45 round" identifier="45round_bw" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,smg" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
     <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="896,960,64,64" origin="0.5,0.5" />
     <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="195,282,17,6" depth="0.55" origin="0.5,0.5" />
     <Body width="40" height="14" density="30" />

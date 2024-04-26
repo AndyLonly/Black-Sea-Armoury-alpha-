@@ -1,10 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Factions>
-  <Faction identifier="lron_league_bw" initialreputation="0" minreputation="-100" maxreputation="100" menuorder="4" controlledoutpostpercentage="90" opposingfaction="clowns">
+  <Faction identifier="lron_league" initialreputation="0" minreputation="-100" maxreputation="100" menuorder="4" controlledoutpostpercentage="40" opposingfaction="">
     <Icon name="lronIcon" texture="%ModDir%/Job/SR.png" sourcerect="0,0,128,128" origin="0.5,0.5"/>
     <IconSmall name="lronIconSmall" texture="%ModDir%/Job/SR2.png" sourcerect="0,0,28,28" origin="0.5,0.5"/>
-    <Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot" minreputation="20" />
-    <Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot" minreputation="20"/>
+    <Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot" minreputation="0"/>
+    <Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot" minreputation="0"/>
+		<Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot_pro" minreputation="20"/>
+		<Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot_pro" minreputation="20"/>
     <Hireable npcsetidentifier="outpostnpcs_bw" npcidentifier="hireablepilot_elite" minreputation="50"/>
     <!--
     <AutomaticMission leveltype="LocationConnection" missiontag="????" minreputation="-100" maxreputation="-50" MaxDistanceFromFactionOutpost="3" DisallowBetweenOtherFactionOutposts="true" minprobability="0.2" maxprobability="0.01"/>

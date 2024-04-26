@@ -100,6 +100,12 @@
   <talentdescription.apolloassistsystem_bw>驾驶阿波罗时，造成额外25%化学烧伤，并且治疗伤员后，使得伤员60秒内获得阿波罗纳米机器人的辅助。</talentdescription.apolloassistsystem_bw>
 	<talentname.circeassistsystem_bw>喀耳刻辅助系统</talentname.circeassistsystem_bw>
 	<talentdescription.circeassistsystem_bw>驾驶喀耳刻时，造成额外100%化学烧伤和烧伤。</talentdescription.circeassistsystem_bw>
+	<talentname.x01aassistsystem_bw>X01A辅助系统</talentname.x01aassistsystem_bw>
+	<talentdescription.x01aassistsystem_bw>驾驶X01A时，提供火控系统对应武器的10%伤害，其中狙击型获得精确射手武器10%的穿甲加成，突破型获得霰弹枪20%的眩晕加成并且有小概率造成瞬杀，冲锋枪获得10%的穿甲加成。</talentdescription.x01aassistsystem_bw>
+	<!-- Factions -->
+	<faction.lron_league>钢铁联盟</faction.lron_league>
+	<faction.lron_league.description>武德充沛</faction.lron_league.description>
+	<faction.lron_league.shortdescription>武德充沛</faction.lron_league.shortdescription>
   <!--AR.xml-->
   <label.semiautomatic>半自动模式</label.semiautomatic>
   <label.lighting>照明系统</label.lighting>
@@ -246,6 +252,14 @@
   <entitydescription.corsairar_bp>实验性原型机，具有极高的攻击性能。使用X01氧气电池。</entitydescription.corsairar_bp>
   <entityname.armored_miningsuit_bw3>大力神 Mk.II(Hercules Mk.II)</entityname.armored_miningsuit_bw3>
   <entitydescription.armored_miningsuit_bw3>重型军用工程机甲改装，稍微改善速度与试验型能量循环炉。</entitydescription.armored_miningsuit_bw3>
+	<entityname.X01A-Fireteam>X01A战斗装甲(攻坚型)</entityname.X01A-Fireteam>
+	<entitydescription.X01A-Fireteam>为了执行多种军事任务而诞生的先进装甲，火控系统专精于突击步枪，能够携带储存两把武器，装甲拥有额外的防护改件。</entitydescription.X01A-Fireteam>
+	<entityname.X01A-Breaker>X01A战斗装甲(突破型)</entityname.X01A-Breaker>
+	<entitydescription.X01A-Breaker>为了执行多种军事任务而诞生的先进装甲，火控系统专精于冲锋枪和霰弹枪，能够携带储存一把武器，装甲拥有额外的防护改件和机动改件和紧急自动注射器。</entitydescription.X01A-Breaker>
+	<entityname.X01A-Precision>X01A战斗装甲(狙击型)</entityname.X01A-Precision>
+	<entitydescription.X01A-Precision>为了执行多种军事任务而诞生的先进装甲，火控系统专精于精确射手步枪，能够携带储存一把武器，装甲拥有热成像系统。</entitydescription.X01A-Precision>
+	<entityname.X01A-Command>X01A战斗装甲(指挥型)</entityname.X01A-Command>
+	<entitydescription.X01A-Command>为了执行多种军事任务而诞生的先进装甲，使队友能够缓慢恢复。</entitydescription.X01A-Command>
   <entityname.apollo_bw>阿波罗(Apollo)</entityname.apollo_bw>
   <entitydescription.apollo_bw>轻型战地医师机甲，可以携带大量医疗物资，在战场中快速移动，并且对药物和研究提供巨量加成。</entitydescription.apollo_bw>
 	<entityname.circe_bw>喀耳刻(Circe)</entityname.circe_bw>
@@ -454,6 +468,14 @@
 	<Afflictiondescription.Circe_sys>生命值提高10%，毒剂和火焰效果增加100%，随着时间中和体内有毒物质。</Afflictiondescription.Circe_sys>
   <Afflictionname.bedsidemanner_bw>阿波罗支援系统</Afflictionname.bedsidemanner_bw>
   <Afflictiondescription.bedsidemanner_bw>移动速度提高10%，物理伤害减免10%，生效期间不会因伤痛而死亡。</Afflictiondescription.bedsidemanner_bw>
+	<Afflictionname.X01A-Fireteam>X01A攻坚系统</Afflictionname.X01A-Fireteam>
+	<Afflictiondescription.X01A-Fireteam>伤害提高10%，生命值提高10%，攻击速度提高10%</Afflictiondescription.X01A-Fireteam>
+	<Afflictionname.X01A-Breaker>X01A突破系统</Afflictionname.X01A-Breaker>
+	<Afflictiondescription.X01A-Breaker>伤害提高10%，生命值提高10%</Afflictiondescription.X01A-Breaker>
+	<Afflictionname.X01A-Precision>X01A狙击系统</Afflictionname.X01A-Precision>
+	<Afflictiondescription.X01A-Precision>伤害提高10%，生命值提高10%，散步减少50%</Afflictiondescription.X01A-Precision>
+	<Afflictionname.X01A-Command>X01A指挥系统</Afflictionname.X01A-Command>
+	<Afflictiondescription.X01A-Command>缓慢恢复伤势和20%眩晕抗性</Afflictiondescription.X01A-Command>
   <entityname.railgunshellbw2>空包弹(Empty Shell)</entityname.railgunshellbw2>
   <!--Enemy Characters equipments-->
   <entityname.corsairar_bw_e>Pirate Corsair</entityname.corsairar_bw_e>
